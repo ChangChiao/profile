@@ -63,8 +63,19 @@ export default function Hero() {
             </h1>
             <p className="max-w-lg text-lg leading-relaxed text-muted">
               擁有多年前端開發經驗，專注於打造高效能、可擴展的 Web 應用程式。
-              熱衷於使用者體驗最佳化、前端架構設計以及現代化前端技術的實踐與推廣。
+              熱衷於提升使用者體驗、前端架構設計以及現代化前端技術的實踐與推廣。
             </p>
+            <a
+              href="https://medium.com/coding-hot-pot"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-flex items-center gap-2 text-primary transition-colors hover:text-accent"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42S14.2 15.54 14.2 12s1.52-6.42 3.38-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75S21.62 15.17 21.62 12s.54-5.75 1.19-5.75S24 8.83 24 12z"/>
+              </svg>
+              Blog — Coding Hot Pot
+            </a>
           </div>
 
           {/* Right - Skills */}

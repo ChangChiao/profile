@@ -35,7 +35,7 @@ const projects = [
     link: "https://vue-youbike.vercel.app/",
   },
   {
-    title: "視差滾動活動官網",
+    title: "f2e比賽活動官網",
     description:
       "使用 GSAP 搭配視差滾動效果打造 F2E 修煉精神時光屋活動網站，展現流暢的捲動動畫體驗。",
     tags: ["Vue 3", "Vite", "Tailwind CSS", "GSAP"],
