@@ -1,31 +1,45 @@
 const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "全台公車動態時刻查詢",
     description:
-      "使用 Next.js 與 TypeScript 打造的電商平台，支援 SSR、購物車系統與金流整合。",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe"],
-    link: "#",
+      "串接 TDX 交通資料 API，提供公車路線查詢、附近站牌搜尋與即時到站資訊，支援收藏功能與每分鐘自動更新。",
+    tags: ["Vue.js", "Vuex", "Tailwind CSS", "Leaflet"],
+    link: "https://github.com/ChangChiao/bus_timetable",
   },
   {
-    title: "Real-time Dashboard",
+    title: "總統即時開票全台地圖",
     description:
-      "即時數據儀表板，透過 WebSocket 串接後端資料，搭配 D3.js 進行資料視覺化。",
-    tags: ["React", "D3.js", "WebSocket", "Node.js"],
-    link: "#",
+      "以 D3.js 與 TopoJSON 呈現 2020 總統大選各區域投票數據，搭配 GSAP 動畫打造互動式開票地圖。",
+    tags: ["Angular", "TypeScript", "D3.js", "GSAP"],
+    link: "https://github.com/ChangChiao/president-invoice",
   },
   {
-    title: "Design System",
+    title: "線上 PDF 文件簽署工具",
     description:
-      "建立企業級 Design System，包含 30+ 可複用元件，搭配 Storybook 文件與自動化測試。",
-    tags: ["React", "Storybook", "Jest", "SCSS"],
-    link: "#",
+      "上傳 PDF 後可於線上新增電子簽名並下載已簽署文件，使用 Fabric.js 處理畫布簽名與 jsPDF 產出檔案。",
+    tags: ["React", "TypeScript", "Fabric.js", "Chakra UI"],
+    link: "https://f2e-2022-sign.vercel.app/",
   },
   {
-    title: "Blog Platform",
+    title: "台灣旅遊景點導覽",
     description:
-      "以 MDX 為基礎的技術部落格，支援深色模式、SEO 最佳化與靜態頁面生成。",
-    tags: ["Next.js", "MDX", "Tailwind CSS", "Vercel"],
-    link: "#",
+      "提供全台景點、餐廳與活動查詢功能，支援分區篩選與漸進式載入，採用 Redux Toolkit 管理狀態。",
+    tags: ["React", "Redux Toolkit", "Styled Components"],
+    link: "https://changchiao.github.io/react_attractions/#/",
+  },
+  {
+    title: "自行車道地圖資訊整合網",
+    description:
+      "根據使用者位置搜尋附近 YouBike 租借站與自行車道，結合 Leaflet 地圖呈現路線與景點資訊。",
+    tags: ["Vue 3", "Vite", "Tailwind CSS", "Leaflet"],
+    link: "https://vue-youbike.vercel.app/",
+  },
+  {
+    title: "視差滾動活動官網",
+    description:
+      "使用 GSAP 搭配視差滾動效果打造 F2E 修煉精神時光屋活動網站，展現流暢的捲動動畫體驗。",
+    tags: ["Vue 3", "Vite", "Tailwind CSS", "GSAP"],
+    link: "https://f2-e-2022.vercel.app/",
   },
 ];
 
@@ -40,11 +54,13 @@ export default function Portfolio() {
           Featured Projects
         </h2>
 
-        <div className="grid gap-6 sm:grid-cols-2">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
             <a
               key={project.title}
               href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group rounded-xl border border-surface-light bg-surface p-6 transition-all hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5"
             >
               <h3 className="mb-2 text-xl font-semibold text-white transition-colors group-hover:text-primary">
