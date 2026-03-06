@@ -15,7 +15,7 @@ export default function Contact() {
 
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
             <a
-              href="https://www.linkedin.com/in/joe-chang"
+              href="https://www.linkedin.com/in/joe-chang-698933153?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
               target="_blank"
               rel="noopener noreferrer"
               className="flex w-full items-center justify-center gap-3 rounded-xl border border-surface-light bg-surface px-6 py-4 text-foreground transition-all hover:border-primary/50 hover:text-primary sm:w-auto"
@@ -32,7 +32,7 @@ export default function Contact() {
             </a>
 
             <a
-              href="mailto:joe.chang@example.com"
+              href="mailto:joe.chang365@gmail.com"
               className="flex w-full items-center justify-center gap-3 rounded-xl border border-surface-light bg-surface px-6 py-4 text-foreground transition-all hover:border-primary/50 hover:text-primary sm:w-auto"
             >
               <svg
